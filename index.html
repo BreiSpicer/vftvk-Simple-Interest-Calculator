@@ -1,16 +1,37 @@
+<!Doctype html>
 <html>
     <head>
+        <title>Simple Interest Calculator</title>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     </head>
-    <body>
-        <h1>Simple Interest Calculator</h1>
+    <div class="maindiv">
+                <h1>Simple Interest Calculator</h1>
 
         Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
+        Rate <input type="range"  id="range" min="minval" max="maxval" value="defaultval">  <br/>
+        <span id="10.25%">
+        </span>
+        No. of Years <select id="years">
+            <option value="1">1</option>
+            <option value="1">2</option>
+            <option value="1">3</option>
+            <option value="1">4</option>
+            <option value="1">5</option>
+            <option value="1">6</option>
+            <option value="1">7</option>
+            <option value="1">8</option>
+            <option value="1">9</option>
+            <option value="1">10</option> <br/>
+        </select>
         Interest : <span id="result"></span><br>
 
-        <button onclick="compute()">Compute</button>
-    </body>
+        <button onclick="compute()">Compute Interest</button>
+        <span id="result">
+
+        </span>
+    </div>
+    <footer>
+        &#169; This Calculator Belongs to Brei Spicer
+    </footer>
 </html>
