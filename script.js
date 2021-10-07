@@ -10,4 +10,6 @@ Function updaterate()
 {
     var rateval = document.getElementById("rate").value;
     document.getElementbyId("rate_val").innertext=rateval
+    <!--I dont know where to put the onchange event-->
+    object.onchange = function(){myScript};
 }
